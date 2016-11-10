@@ -6,13 +6,20 @@
     2、manager.option修饰器
     3、继承command
 """
+import os
+import sys
+
+filepath = os.path.abspath(__file__)
+parent_path = os.path.dirname(filepath)
+sys.path.append(parent_path)
+
 from flask.ext.script import (
     Manager, prompt_bool, Server, Command, Option, Shell,
     prompt, prompt_pass, prompt_choices
 )
 
 import models
-from .flaskr import app
+from flaskr import app
 
 manager = Manager(app)
 

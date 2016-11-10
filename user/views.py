@@ -11,7 +11,7 @@ import sys
 
 from flask import Blueprint, render_template, request, Response, jsonify
 from flask.views import MethodView
-from .models import User
+from models import User
 
 CURENTPATH = os.path.abspath(os.path.dirname(__file__))
 

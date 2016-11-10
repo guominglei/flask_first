@@ -2,7 +2,7 @@
 
 
 import pytest
-from ..flaskr import app as fl_app
+from flaskr import app as fl_app
 
 
 @pytest.fixture

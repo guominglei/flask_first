@@ -6,7 +6,7 @@
 import traceback
 from sqlalchemy import Column, Integer, String, Text
 
-from .flask_sql_database import Base, db_session
+from flask_sql_database import Base, db_session
 
 
 class Entries(Base):

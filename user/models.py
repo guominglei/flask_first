@@ -5,7 +5,7 @@
 """
 from sqlalchemy import Column, Integer, String, Text, DateTime, Float, Boolean, PickleType
 #from database import Base, db_session
-from ..flask_sql_database import Base, db_session, db
+from flask_sql_database import Base, db_session, db
 import traceback
 
 

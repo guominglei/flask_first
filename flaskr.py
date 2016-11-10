@@ -10,11 +10,11 @@ from flask import (
 from flask_debugtoolbar import DebugToolbarExtension
 
 
-from .models import Entries
-from .user.views import user
-from .flask_sql_database import db_session, db
-from .view_class import ShowEntiesView, EntiesApi
-from .lazy_callback import (
+from models import Entries
+from user.views import user
+from flask_sql_database import db_session, db
+from view_class import ShowEntiesView, EntiesApi
+from lazy_callback import (
     detect_user_language, call_after_reqeust_callbacks
 )
 
