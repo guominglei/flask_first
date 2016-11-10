@@ -58,7 +58,6 @@ def command_test_default(host, port):  # 有参数名称 有默认值
 # 方式3 先定义 然后注册
 class HelloWold(Command):
     "print hello world doc"
-    print "hello world"
     option_list = (
         Option('--name', "-n", dest="username", default="rick", help=u"用户名"),
     )
