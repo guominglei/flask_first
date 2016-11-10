@@ -7,8 +7,6 @@ from flask import (
     Flask, render_template, session, request,
     Response, abort, url_for, flash, redirect, g
 )
-from flask_debugtoolbar import DebugToolbarExtension
-
 
 from models import Entries
 from user.views import user
@@ -26,8 +24,6 @@ from lazy_callback import (
 def create_app():
     app = Flask(__name__)
     app.config.from_pyfile("settings.py")
-
-    toolbar = DebugToolbarExtension(app)
 
     # 日志
     import logging
